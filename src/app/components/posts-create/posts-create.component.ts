@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./posts-create.component.less']
 })
 export class PostsCreateComponent implements OnInit {
+  newPost = "";
 
   onAddPost() {
-    alert("Post added!");
+    this.newPost = "The user's new post.";
   }
 
   constructor() { }
