@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsCreateComponent implements OnInit {
 
+  onAddPost() {
+    alert("Post added!");
+  }
+
   constructor() { }
 
   ngOnInit() {
