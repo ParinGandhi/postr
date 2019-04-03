@@ -1,4 +1,17 @@
-<textarea rows="6" [(ngModel)]="enteredValue"></textarea>
-<hr>
-<button (click)="onAddPost()">Save Post</button>
-<p>{{ newPost }}</p>
+<div class="row">
+  <div class="col-3 offset-1">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Add new post</h5>
+        <textarea class="form-control" rows="6" [(ngModel)]="enteredValue"></textarea>
+        <hr>
+        <button (click)="onAddPost()" class="btn btn-outline-primary">Save Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3 offset-1">
+    <p>{{newPost}}</p>
+  </div>
+</div>
